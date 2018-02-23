@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">SOLID Bank</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_customer">Customer Login</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="id_hint">ID number</string>
+    <string name="user_password_hint">Password</string>
+    <string name="user_password_confirm_hint">Confirm Password</string>
+    <string name="address_hint">Address</string>
+    <string name="age_hint">Age</string>
+    <string name="name_hint">Name</string>
+    <string name="create_customer">Creating Customer</string>
+    <string name="amount">Amount</string>
+    <string name="create_account_hint">Create Account</string>
+    <string name="account_name_hint">Account Name</string>
+    <string name="starting_balance_hint">Starting Balance</string>
+    <string name="type">Type</string>
+    <string name="selection_hint">Enter A Number</string>
+    <string name="admin_selection">Admin Selection</string>
+    <string name="change_hint">Change</string>
+    <string name="count_one">1.</string>
+    <string name="count_two">2.</string>
+    <string name="count_three">3.</string>
+    <string name="count_four">4.</string>
+    <string name="count_five">5.</string>
+    <string name="count_six">6.</string>
+    <string name="count_seven">7.</string>
+    <string name="count_eight">8.</string>
+    <string name="count_nine">9.</string>
+    <string name="count_ten">10.</string>
+    <string name="count_eleven">11.</string>
+    <string name="count_twelve">12.</string>
+    <string name="count_thirteen">13.</string>
+    <string name="count_fourteen">14.</string>
+    <string name="create_teller">Create New Teller</string>
+    <string name="create_admin">Create New Admin</string>
+    <string name="view_admins">View All Admins</string>
+    <string name="view_tellers">View All Tellers</string>
+    <string name="view_customers">View All Customers</string>
+    <string name="view_bank">View Bank Total</string>
+    <string name="promote_teller">Promote Teller</string>
+    <string name="view_accounts">View All Accounts</string>
+    <string name="view_customer_account">View A Customer Account</string>
+    <string name="serialize">Serialize Database</string>
+    <string name="deserialize">Deserialize Database</string>
+    <string name="peek_message">Peek Message</string>
+    <string name="leave_message">Leave Message</string>
+    <string name="view_message">View Message</string>
+    <string name="create_first_admin">Create First Admin</string>
+    <string name="select_admin">Admin Terminal</string>
+    <string name="select_teller_terminal">Teller Terminal</string>
+    <string name="select_atm">ATM</string>
+    <string name="main_text">Select one of the following</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="authenticate_customer">Authenticate Customer</string>
+    <string name="make_user">Make New User</string>
+    <string name="make_account">Make New Account</string>
+    <string name="give_interest">Give Interest</string>
+    <string name="give_interest_all_accounts">Give Interest to All Accounts</string>
+    <string name="deposit">Make a Deposit</string>
+    <string name="withdraw">Make a Withdrawal</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="list_customer_accounts">List Customer Accounts</string>
+    <string name="view_customer_messages">View Customer Messages</string>
+    <string name="change_customer_info">Change Customer Information</string>
+    <string name="close_session">Close Customer Session</string>
+    <string name="message_for_customer">Leave Message for Customer</string>
+    <string name="add_loans">Add Loans</string>
+    <string name="list_accounts">List Accounts and Balances</string>
+    <string name="user_old_password_confirm_hint">Enter Current Password to Confirm</string>
+
+    <string-array name="roles_array">
+        <item>Admin</item>
+        <item>Teller</item>
+        <item>Customer</item>
+    </string-array>
+
+    <string-array name="account_types_array">
+        <item>Chequing Account</item>
+        <item>Savings Account</item>
+        <item>Tax-Free Savings Account</item>
+        <item>Restricted Savings Account</item>
+        <item>Balance Owing Account</item>
+    </string-array>
+
+    <string name="initial_selection_text">Please provide initial arguments.\n0: First Admin Mode\n1: Main Bank Functions\n2: Admin Mode\n</string>
+    <string name="choice_hint">Choice</string>
+    <string name="empty_entry_error">Entry cannot be empty!</string>
+    <string name="short_password_error">Password length must be at least 4!</string>
+    <string name="confirm_password_error">Password does not match!</string>
+    <string name="address_empty_error">Address cannot be empty!</string>
+    <string name="admin_creation_text">Creating Admin</string>
+    <string name="customer_creation_text">Creating Customer</string>
+    <string name="teller_creation_text">Creating Teller</string>
+    <string name="bank_terminal_text">1: TELLER Interface\n2: ATM Interface\n0: Exit</string>
+    <string name="logout">Logout</string>
+    <string name="logout_message">You have been logged out.</string>
+
+    <string name="create_joint_account">Create Joint Account</string>
+    <string name="set_interest_rate">Set Interest Rate</string>
+    <string name="new_interest_rate">New Interest Rate</string>
+    <string name="select_account">Select an Account</string>
+
+</resources>

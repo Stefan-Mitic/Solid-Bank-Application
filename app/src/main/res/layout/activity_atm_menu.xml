@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingStart="20dp" android:paddingEnd="20dp"
+    android:paddingTop="15dp" android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/atm_menu_btn_list_accounts"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:text="@string/list_accounts"
+            android:textSize="21sp"
+            android:background="@drawable/atm_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"
+            android:onClick="listAccounts"
+            />
+
+        <Button
+            android:id="@+id/atm_menu_btn_deposit"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:text="@string/deposit"
+            android:background="@drawable/atm_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/atm_menu_btn_list_accounts"
+            android:onClick="makeDeposit"
+            />
+
+        <Button
+            android:id="@+id/atm_menu_btn_check_balance"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:text="@string/check_balance"
+            android:background="@drawable/atm_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/atm_menu_btn_deposit"
+            android:onClick="checkBalance"/>
+
+        <Button
+            android:id="@+id/atm_menu_btn_withdraw"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:text="@string/withdraw"
+            android:background="@drawable/atm_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/atm_menu_btn_check_balance"
+            android:onClick="makeWithdrawal"/>
+
+        <Button
+            android:id="@+id/atm_menu_btn_view_messages"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:text="@string/view_message"
+            android:background="@drawable/atm_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/atm_menu_btn_withdraw"
+            android:onClick="viewMessages"/>
+
+        <Button
+            android:id="@+id/atm_menu_btn_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:text="@string/logout"
+            android:background="@drawable/logout_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/atm_menu_btn_view_messages"
+            android:onClick="logout"/>
+
+    </RelativeLayout>
+
+</ScrollView>

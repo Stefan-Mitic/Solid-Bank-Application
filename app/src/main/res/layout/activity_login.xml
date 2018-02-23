@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp" >
+
+        <TextView
+            android:id="@+id/login_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login_customer"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/login_et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_tv_title"
+            android:hint="@string/id_hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/login_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_et_id"
+            android:hint="@string/user_password_hint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_et_password"
+            android:layout_centerHorizontal="true"
+            android:onClick="submitLoginInfo"
+            android:text="@string/submit_button_text" />
+
+    </RelativeLayout>
+</ScrollView>

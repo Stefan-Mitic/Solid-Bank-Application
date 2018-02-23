@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:id="@+id/create_user_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/create_customer"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/create_user_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_user_tv_title"
+            android:hint="@string/name_hint" />
+
+        <EditText
+            android:id="@+id/create_user_et_age"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_user_et_name"
+            android:hint="@string/age_hint" />
+
+        <EditText
+            android:id="@+id/create_user_et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_user_et_age"
+            android:hint="@string/address_hint"
+            android:maxLength="100"/>
+
+        <EditText
+            android:id="@+id/create_user_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_user_et_address"
+            android:hint="@string/user_password_hint"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/create_user_et_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_user_et_password"
+            android:hint="@string/user_password_confirm_hint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_user_et_confirm"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/create_user_btn_submit"
+            android:text="@string/submit_button_text"
+            android:onClick="submitUserInfo"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/teller_menu_btn_authenticate_customer"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="authenticateCustomer"
+            android:text="@string/authenticate_customer"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_make_customer"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_authenticate_customer"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="createNewCustomer"
+            android:text="@string/make_user"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_make_account"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_make_customer"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="createNewAccount"
+            android:text="@string/make_account"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_create_joint_account"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_make_account"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="createJointAccount"
+            android:text="@string/create_joint_account"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_give_interest"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_create_joint_account"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="giveInterest"
+            android:text="@string/give_interest"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_deposit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_give_interest"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="makeDeposit"
+            android:text="@string/deposit"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_withdraw"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_deposit"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="makeWithdrawal"
+            android:text="@string/withdraw"
+            />
+
+
+        <Button
+            android:id="@+id/teller_menu_btn_add_loans"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_withdraw"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="addLoans"
+            android:text="@string/add_loans"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_check_balance"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_add_loans"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="checkBalance"
+            android:text="@string/check_balance"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_list_customer_accounts"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_check_balance"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="listAccounts"
+            android:text="@string/list_customer_accounts"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_view_customer_messages"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_list_customer_accounts"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="viewCustomerMessages"
+            android:text="@string/view_customer_messages"
+            android:textSize="21sp"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_change_customer_info"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_view_customer_messages"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="changeCustomerInfo"
+            android:text="@string/change_customer_info"
+            android:textSize="21sp"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_close_customer_session"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_change_customer_info"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="closeCustomerSession"
+            android:text="@string/close_session"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_leave_customer_message"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_close_customer_session"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="leaveMessage"
+            android:text="@string/message_for_customer"
+            android:textSize="21sp"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_view_messages"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_leave_customer_message"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:onClick="viewMessages"
+            android:text="@string/view_message"
+            />
+
+        <Button
+            android:id="@+id/teller_menu_btn_logout"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/teller_menu_btn_view_messages"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logout_button"
+            android:onClick="logout"
+            android:text="@string/logout"
+            />
+
+    </RelativeLayout>
+</ScrollView>
